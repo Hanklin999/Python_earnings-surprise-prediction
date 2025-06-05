@@ -18,12 +18,12 @@ Python, pandas, yfinance, scikit-learn, XGBoost, SHAP, seaborn, matplotlib
 We evaluated Logistic Regression, Random Forest, and XGBoost (with class imbalance handling).  
 XGBoost with `scale_pos_weight=0.5` achieved the best trade-off between precision and recall.
 
-![PR Curve](images/pr_conf_matrix.png)
+![PR Curve]([images/pr_conf_matrix.png](https://github.com/Hanklin999/images/blob/main/Python_PR_Curve.png))
 
 ##  Explainability – SHAP
 SHAP plots revealed sector and quarter patterns influencing predictions.
 
-![SHAP Sector](images/shap_sector_plot.png)
+![SHAP Sector]([images/shap_sector_plot.png](https://github.com/Hanklin999/images/blob/main/shap_sector_plot.png))
 
 ##  Files
 - `earnings_surprise_colab.ipynb`: Full end-to-end pipeline
