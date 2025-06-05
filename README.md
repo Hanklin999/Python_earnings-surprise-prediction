@@ -26,9 +26,7 @@ SHAP plots revealed sector and quarter patterns influencing predictions.
 ![SHAP Sector](https://github.com/Hanklin999/images/blob/main/shap_sector_plot.png)
 
 ##  Files
-- `earnings_surprise_colab.ipynb`: Full end-to-end pipeline
-- `images/`: Visualization assets
-- `requirements.txt`: Python package list
+- `earnings_surprise_colab.ipynb`: ![Full end-to-end pipeline](https://github.com/Hanklin999/Python_earnings-surprise-prediction/blob/main/earnings_surprise_prediction_colab.ipynb)
 
 ##  Appendix – Hyperparameter Tuning
 Included sensitivity analysis on `scale_pos_weight` for XGBoost from 0.1 to 1.0
