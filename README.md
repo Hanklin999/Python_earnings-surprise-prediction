@@ -1,6 +1,12 @@
-# 📈 Earnings Surprise Prediction – FP&A ML Pipeline with SHAP
+# 📈 Earnings Surprise Prediction | FP&A Forecasting Pipeline (S&P 500, XGBoost + SHAP)
 
 A data-driven project that simulates a **Financial Planning & Analysis (FP&A)** use case: predicting whether **S&P 500 companies** will beat quarterly earnings expectations using public financial data and explainable machine learning.
+
+## 🚀 Quick Demo
+
+- ✅ Predict whether a company will beat EPS estimates using historical data
+- 📉 Understand model drivers with SHAP
+- 📊 Evaluate performance with confusion matrix and F1-score
 
 > 🧠 **Use case**: Sell-side analysts, buy-side investors, and internal FP&A teams can use this model to anticipate earnings outcomes and improve forecast accuracy.
 
