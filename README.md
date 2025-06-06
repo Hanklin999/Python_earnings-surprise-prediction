@@ -1,22 +1,23 @@
-# Python_earnings-surprise-prediction
-A data-driven FP&amp;A project predicting earnings surprises using S&amp;P 500 data and SHAP-based model interpretation.
+# 📈 Earnings Surprise Prediction – FP&A ML Pipeline with SHAP
 
-#  Earnings Surprise Prediction (S&P 500)
+A data-driven project that simulates a **Financial Planning & Analysis (FP&A)** use case: predicting whether **S&P 500 companies** will beat quarterly earnings expectations using public financial data and explainable machine learning.
 
-This project simulates a real-world Financial Planning & Analysis (FP&A) scenario by predicting whether a public company will beat earnings expectations using sector and quarter data.
+> 🧠 **Use case**: Sell-side analysts, buy-side investors, and internal FP&A teams can use this model to anticipate earnings outcomes and improve forecast accuracy.
 
 ---
 
-##  Objective
-- Predict `Reported EPS > Estimated EPS` (earnings surprise)
-- Support earnings alert systems and forecast calibration
+## 🧭 Project Overview
 
-##  Tools
-Python, pandas, yfinance, scikit-learn, XGBoost, SHAP, seaborn, matplotlib
+| Category | Details |
+|----------|---------|
+| 🎯 Objective | Predict if a company will report EPS > Estimate (binary surprise) |
+| 🛠 Tools | Python, `yfinance`, `XGBoost`, `SHAP`, `scikit-learn`, `matplotlib`, `seaborn` |
+| 📦 Dataset | S&P 500 companies' EPS Actual vs Estimate (2019–2024) |
+| 📍 Output | Binary classification (`1 = beat`, `0 = meet/miss`) |
 
-## Model Comparison
-We evaluated Logistic Regression, Random Forest, and XGBoost (with class imbalance handling).  
-XGBoost with `scale_pos_weight=0.5` achieved the best trade-off between precision and recall.
+---
+
+## 📂 Folder Structure
 
 ![PR Curve](https://github.com/Hanklin999/images/blob/main/Python_PR_Curve.png)
 
