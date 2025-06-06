@@ -117,5 +117,5 @@ Python_earnings-surprise-prediction/
 - 📧 Email: [chihhanlin99@gmail.com](mailto:chihhanlin99@gmail.com)  
 - 🔗 [GitHub](https://github.com/Hanklin999)  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/hank-lin-a05189181/)  
-- 🌐 [Portfolio (Notion)]([https://your-notion-link](https://four-elbow-906.notion.site/Personal-Project-Python-Earnings-Forecast-ML-208d839e9e7e8019aeb9e705ac9e0cc8?pvs=74)) 
+- 🌐 [Portfolio (Notion)](https://four-elbow-906.notion.site/Personal-Project-Python-Earnings-Forecast-ML-208d839e9e7e8019aeb9e705ac9e0cc8?pvs=74)
 
