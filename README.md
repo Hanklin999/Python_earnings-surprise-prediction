@@ -18,17 +18,18 @@ A data-driven project that simulates a **Financial Planning & Analysis (FP&A)** 
 ---
 
 ## 📂 Folder Structure
-project/
-├── data/ # Raw EPS and metadata
-├── notebooks/ # Jupyter notebooks
-│ └── earnings_surprise_colab.ipynb
-├── outputs/ # SHAP plots, classification reports
-├── assets/ # SHAP summary, model diagrams
-└── README.md
-
+```
+Python_earnings-surprise-prediction/
+├── colab notebooks/   # Jupyter notebooks for modeling and analysis
+├── requirements.txt   # Project dependencies
+├── assets/            # Visualizations (confusion matrix, SHAP plots, etc.)
+└── README.md          # Project overview and instructions 
+```
 ---
 
 ## 🧮 Modeling Process
+
+![Model Pipeline](assets/model_pipeline_diagram.png)
 
 1. **Data Collection**
    - Pulled EPS actual/estimate from Yahoo Finance (`yfinance`)
@@ -61,7 +62,13 @@ project/
 
 ### 🔍 SHAP Summary Plot
 
-![shap_summary](https://github.com/Hanklin999/images/blob/main/shap_sector_plot.png)
+![SHAP Summary](assets/shap_sector_plot.png)
+
+---
+
+### 📊 Confusion Matrices & Precision-Recall Curves
+
+![Evaluation Metrics](assets/confusion_matrix.png)
 
 ---
 
