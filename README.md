@@ -58,6 +58,26 @@ Python_earnings-surprise-prediction/
 
 ---
 
+## 📊 Model Optimization & Explainability
+
+To improve model performance and interpretability, the following enhancements were implemented:
+
+- 🔧 **GridSearchCV**: Hyperparameter tuning on `XGBoostClassifier` using 5-fold cross-validation and ROC-AUC scoring.  
+  → **Best Parameters**: `{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 150}`
+
+- 📈 **ROC-AUC Evaluation**: ROC Curve was plotted to evaluate model discrimination power.  
+  → **AUC Score**: 0.65, indicating moderate ability to distinguish earnings beat vs. miss.
+
+- 🧠 **SHAP Explainability**: Used SHAP (SHapley Additive Explanations) to understand feature-level impacts.  
+  → Top features included `EPS Gap`, `EPS Surprise %`, and `Sector`.
+
+These enhancements not only improved the model's robustness but also made it more explainable for **financial decision-making and FP&A simulation scenarios**.
+
+
+---
+
+
+
 ## 📊 Results Snapshot
 
 | Metric | XGBoost |
