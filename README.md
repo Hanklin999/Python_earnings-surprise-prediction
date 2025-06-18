@@ -1,6 +1,12 @@
-# 📈 Earnings Surprise Prediction – FP&A ML Pipeline with SHAP
+# 📈 Earnings Surprise Prediction | FP&A Forecasting Pipeline (S&P 500, XGBoost + SHAP)
 
 A data-driven project that simulates a **Financial Planning & Analysis (FP&A)** use case: predicting whether **S&P 500 companies** will beat quarterly earnings expectations using public financial data and explainable machine learning.
+
+## 🚀 Quick Demo
+
+- ✅ Predict whether a company will beat EPS estimates using historical data
+- 📉 Understand model drivers with SHAP
+- 📊 Evaluate performance with confusion matrix and F1-score
 
 > 🧠 **Use case**: Sell-side analysts, buy-side investors, and internal FP&A teams can use this model to anticipate earnings outcomes and improve forecast accuracy.
 
@@ -18,17 +24,18 @@ A data-driven project that simulates a **Financial Planning & Analysis (FP&A)** 
 ---
 
 ## 📂 Folder Structure
-project/
-├── data/ # Raw EPS and metadata
-├── notebooks/ # Jupyter notebooks
-│ └── earnings_surprise_colab.ipynb
-├── outputs/ # SHAP plots, classification reports
-├── assets/ # SHAP summary, model diagrams
-└── README.md
-
+```
+Python_earnings-surprise-prediction/
+├── colab notebooks/   # Jupyter notebooks for modeling and analysis
+├── requirements.txt   # Project dependencies
+├── assets/            # Visualizations (confusion matrix, SHAP plots, etc.)
+└── README.md          # Project overview and instructions 
+```
 ---
 
 ## 🧮 Modeling Process
+
+![Model Pipeline](assets/model_pipeline_diagram.png)
 
 1. **Data Collection**
    - Pulled EPS actual/estimate from Yahoo Finance (`yfinance`)
@@ -51,6 +58,26 @@ project/
 
 ---
 
+## 📊 Model Optimization & Explainability
+
+To improve model performance and interpretability, the following enhancements were implemented:
+
+- 🔧 **GridSearchCV**: Hyperparameter tuning on `XGBoostClassifier` using 5-fold cross-validation and ROC-AUC scoring.  
+  → **Best Parameters**: `{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 150}`
+
+- 📈 **ROC-AUC Evaluation**: ROC Curve was plotted to evaluate model discrimination power.  
+  → **AUC Score**: 0.65, indicating moderate ability to distinguish earnings beat vs. miss.
+
+- 🧠 **SHAP Explainability**: Used SHAP (SHapley Additive Explanations) to understand feature-level impacts.  
+  → Top features included `EPS Gap`, `EPS Surprise %`, and `Sector`.
+
+These enhancements not only improved the model's robustness but also made it more explainable for **financial decision-making and FP&A simulation scenarios**.
+
+
+---
+
+
+
 ## 📊 Results Snapshot
 
 | Metric | XGBoost |
@@ -61,7 +88,13 @@ project/
 
 ### 🔍 SHAP Summary Plot
 
-![shap_summary](https://github.com/Hanklin999/images/blob/main/shap_sector_plot.png)
+![SHAP Summary](assets/shap_sector_plot.png)
+
+---
+
+### 📊 Confusion Matrices & Precision-Recall Curves
+
+![Evaluation Metrics](assets/confusion_matrix.png)
 
 ---
 
@@ -110,5 +143,5 @@ project/
 - 📧 Email: [chihhanlin99@gmail.com](mailto:chihhanlin99@gmail.com)  
 - 🔗 [GitHub](https://github.com/Hanklin999)  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/hank-lin-a05189181/)  
-- 🌐 [Portfolio (Notion)]([https://your-notion-link](https://four-elbow-906.notion.site/Personal-Project-Python-Earnings-Forecast-ML-208d839e9e7e8019aeb9e705ac9e0cc8?pvs=74)) 
+- 🌐 [Portfolio (Notion)](https://four-elbow-906.notion.site/Personal-Project-Python-Earnings-Forecast-ML-208d839e9e7e8019aeb9e705ac9e0cc8?pvs=74)
 
