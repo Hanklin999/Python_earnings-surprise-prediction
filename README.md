@@ -67,7 +67,8 @@ To improve model performance and interpretability, the following enhancements we
 
 - 📈 **ROC-AUC Evaluation**: ROC Curve was plotted to evaluate model discrimination power.  
   → **AUC Score**: 0.65, indicating moderate ability to distinguish earnings beat vs. miss.
-
+### 📉 ROC Curve
+![ROC Curve](assets/ROC_Curve.png)
 - 🧠 **SHAP Explainability**: Used SHAP (SHapley Additive Explanations) to understand feature-level impacts.  
   → Top features included `EPS Gap`, `EPS Surprise %`, and `Sector`.
 
